@@ -28,7 +28,7 @@ const menuItems = [
         price: 580,
         cookingTime: 5,
         complexity: 1,
-        image: '../assets/norm131.jpg'
+        image: 'assets/norm131.jpg'
     },
     {
         id: 4,
@@ -38,7 +38,7 @@ const menuItems = [
         price: 1200,
         cookingTime: 25,
         complexity: 4,
-        image: '../assets/e1deb7394fdd7f15ede274980b1ee6e7baac4eba.jpg'
+        image: 'assets/e1deb7394fdd7f15ede274980b1ee6e7baac4eba.jpg'
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ const menuItems = [
         price: 650,
         cookingTime: 20,
         complexity: 2,
-        image: '../assets/carbonara-recipe-e1557844142474.jpg'
+        image: 'assets/carbonara-recipe-e1557844142474.jpg'
     },
     {
         id: 6,
@@ -58,7 +58,7 @@ const menuItems = [
         price: 890,
         cookingTime: 22,
         complexity: 3,
-        image: '../assets/99d76662f846ce04b7260ab26d9639a6.jpg'
+        image: 'assets/99d76662f846ce04b7260ab26d9639a6.jpg'
     },
     {
         id: 7,
@@ -68,7 +68,7 @@ const menuItems = [
         price: 780,
         cookingTime: 18,
         complexity: 4,
-        image: '../assets/Culinaryon_Marko_MK_.jpg'
+        image: 'assets/Culinaryon_Marko_MK_.jpg'
     },
     {
         id: 8,
@@ -78,7 +78,7 @@ const menuItems = [
         price: 380,
         cookingTime: 10,
         complexity: 2,
-        image: '../assets/tiramisu.jpg'
+        image: 'assets/tiramisu.jpg'
     },
     {
         id: 9,
@@ -88,7 +88,7 @@ const menuItems = [
         price: 420,
         cookingTime: 5,
         complexity: 1,
-        image: '../assets/avtckUp4GG8.jpg'
+        image: 'assets/avtckUp4GG8.jpg'
     },
     {
         id: 10,
@@ -98,7 +98,7 @@ const menuItems = [
         price: 280,
         cookingTime: 7,
         complexity: 1,
-        image: '../assets/shokoladno-molochnii_kokteil_s_morojenim-803295.jpg'
+        image: 'assets/shokoladno-molochnii_kokteil_s_morojenim-803295.jpg'
     },
     {
         id: 11,
@@ -108,7 +108,7 @@ const menuItems = [
         price: 220,
         cookingTime: 5,
         complexity: 1,
-        image: '../assets/h434rzmjfk5umsqwryzmv55hbbrq5u0h.png'
+        image: 'assets/h434rzmjfk5umsqwryzmv55hbbrq5u0h.png'
     },
     {
         id: 12,
@@ -118,7 +118,7 @@ const menuItems = [
         price: 250,
         cookingTime: 8,
         complexity: 1,
-        image: '../assets/Coffee_Cappuccino_Cream_Cup_Saucer_525045_2048x1152.jpg'
+        image: 'assets/Coffee_Cappuccino_Cream_Cup_Saucer_525045_2048x1152.jpg'
     }
 ];
 
@@ -132,5 +132,6 @@ const categories = [
 ];
 
 export { menuItems, categories };
+
 
 
