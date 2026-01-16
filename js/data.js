@@ -8,7 +8,7 @@ const menuItems = [
         price: 320,
         cookingTime: 10,
         complexity: 1,
-        image: '../assets/shutterstock_454361815_1579876041-e1579876086639-scaled.jpg'
+        image: 'assets/shutterstock_454361815_1579876041-e1579876086639-scaled.jpg'
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const menuItems = [
         price: 450,
         cookingTime: 15,
         complexity: 2,
-        image: '../assets/karpacho-iz-lososya-770x513.jpg'
+        image: 'assets/karpacho-iz-lososya-770x513.jpg'
     },
     {
         id: 3,
@@ -132,4 +132,5 @@ const categories = [
 ];
 
 export { menuItems, categories };
+
 
