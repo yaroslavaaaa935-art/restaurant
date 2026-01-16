@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT | Онлайн-заказ</title>
+    <meta name="description" content="Гастрономическое наслаждение в минималистичной атмосфере. Закажите изысканные блюда онлайн.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <div class="logo-icon">R</div>
+                    <span class="logo-text">RESTAURANT</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#menu" class="nav-link">Меню</a></li>
+                    <li><a href="#about" class="nav-link">Философия</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+                <div class="header-controls">
+                    <div class="cart-icon" id="cart-toggle">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </div>
+                    <button class="menu-toggle" id="menu-toggle">
+                        <span class="menu-toggle-line"></span>
+                        <span class="menu-toggle-line"></span>
+                        <span class="menu-toggle-line"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Изысканная гастрономия в минимализме</h1>
+                <p class="hero-subtitle">Тонкие вкусы, чистая эстетика, безупречный сервис</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Смотреть меню</a>
+                    <a href="#reservation" class="btn btn-secondary">Забронировать столик</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="decoration-line"></div>
+            <div class="decoration-line"></div>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Фильтры категорий -->
+            <section class="category-filters">
+                <h2 class="section-title">Меню</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-category="all">
+                        <span class="filter-btn-text">Все</span>
+                    </button>
+                    <button class="filter-btn" data-category="appetizers">
+                        <span class="filter-btn-text">Закуски</span>
+                    </button>
+                    <button class="filter-btn" data-category="main">
+                        <span class="filter-btn-text">Основные</span>
+                    </button>
+                    <button class="filter-btn" data-category="desserts">
+                        <span class="filter-btn-text">Десерты</span>
+                    </button>
+                    <button class="filter-btn" data-category="drinks">
+                        <span class="filter-btn-text">Напитки</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Секция меню -->
+            <section class="menu-section" id="menu">
+                <div class="menu-grid" id="menu-items">
+                    <!-- Блюда загружены через JavaScript -->
+                </div>
+            </section>
+
+            <!-- Философия ресторана -->
+            <section class="about-section" id="about">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">Философия</h2>
+                        <p class="about-description">Мы верим, что истинная роскошь — в простоте и качестве. Каждое блюдо создается с вниманием к деталям, из отборных сезонных ингредиентов, с уважением к традициям и смелостью к инновациям.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-text">натуральные продукты</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">24</div>
+                                <div class="stat-text">часа на ферментацию</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">3</div>
+                                <div class="stat-text">уровня контроля качества</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Контактная информация -->
+            <section class="contact-section" id="contact">
+                <h2 class="section-title">Контакты</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Посетите нас</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> г. Санкт-Петербург, ул. Садовая, 15</p>
+                        <p><i class="fas fa-clock"></i> Ежедневно с 12:00 до 23:00</p>
+                        <p><i class="fas fa-phone"></i> +7 (812) 123-45-67</p>
+                        <p><i class="fas fa-envelope"></i> reserve@restaurant.ru</p>
+                    </div>
+                    <div class="contact-form" id="reservation">
+                        <h3>Забронировать столик</h3>
+                        <form id="reservation-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Ваше имя" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" placeholder="Телефон" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <select required>
+                                        <option value="" disabled selected>Время</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="21:00">21:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Особые пожелания" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Забронировать</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Панель корзины -->
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Ваш заказ</h2>
+            <button class="close-cart" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-content">
+            <div class="cart-items" id="cart-items">
+                <!-- Товары в корзине добавлены через JavaScript -->
+                <div class="empty-cart" id="empty-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>Ваша корзина пуста</p>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Сумма заказа:</span>
+                    <span id="cart-subtotal">0 ₽</span>
+                </div>
+                <div class="summary-row">
+                    <span>Доставка:</span>
+                    <span id="delivery-cost">0 ₽</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Итого:</span>
+                    <span id="cart-total">0 ₽</span>
+                </div>
+                <div class="cooking-time">
+                    <i class="fas fa-clock"></i>
+                    <span>Время приготовления: <strong id="total-cooking-time">0</strong> мин.</span>
+                </div>
+                <button class="btn btn-order" id="checkout-btn">Оформить заказ</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Подложка для затемнения фона при открытой корзине -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">R</div>
+                    <span class="logo-text">RESTAURANT</span>
+                </div>
+                <div class="footer-social">
+                    <h4>Следите за нами</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-subscribe">
+                    <h4>Будьте в курсе событий</h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RESTAURANT. Все права защищены.</p>
+                <p>Выпускной проект Юдиной Ярославы по дисциплине "Веб-дизайн"</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно оформления заказа -->
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Оформление заказа</h2>
+                <button class="close-modal" id="close-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="order-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Адрес доставки</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Комментарий к заказу</label>
+                        <textarea id="comments" rows="3"></textarea>
+                    </div>
+                    <div class="order-summary-modal">
+                        <h3>Ваш заказ</h3>
+                        <div id="modal-order-items"></div>
+                        <div class="summary-row">
+                            <span>Итого к оплате:</span>
+                            <span id="modal-order-total">0 ₽</span>
+                        </div>
+                        <div class="cooking-time-modal">
+                            <i class="fas fa-clock"></i>
+                            <span>Примерное время приготовления и доставки: <strong id="modal-cooking-time">0</strong> мин.</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Подтвердить заказ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+
+<!-- Модальное окно подтверждения заказа -->
+<div class="modal" id="confirmation-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Заказ оформлен</h2>
+            <button class="close-modal" id="close-confirmation-modal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="confirmation-content">
+                <i class="fas fa-check-circle confirmation-icon"></i>
+                <h3>Спасибо за заказ!</h3>
+                <p id="confirmation-details"></p>
+                <div class="confirmation-summary">
+                    <div class="summary-row">
+                        <span>Сумма заказа:</span>
+                        <span id="confirmation-total">0 ₽</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Время приготовления:</span>
+                        <span id="confirmation-time">0 мин.</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Статус:</span>
+                        <span class="status-badge">В обработке</span>
+                    </div>
+                </div>
+                <p class="confirmation-note">Мы свяжемся с вами в ближайшее время для подтверждения заказа.</p>
+                <button class="btn btn-primary" id="confirmation-ok-btn">Вернуться в меню</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
